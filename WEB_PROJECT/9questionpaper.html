@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>/*Table Page*/
+      .tbl-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      table {
+        background: #f5f5f5;
+        border-collapse: separate;
+        box-shadow: inset 0 1px 0 #fff;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: left;
+        width: 800px;
+      }	
+      
+      th {
+        background: #191654;
+        border-left: 1px solid #555;
+        border-right: 1px solid #777;
+        border-top: 1px solid #555;
+        border-bottom: 1px solid #333;
+        box-shadow: inset 0 1px 0 #999;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 15px;
+        position: relative;
+        text-shadow: 0 1px 0 #000;	
+      }
+      
+      th:after {
+        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+        content: '';
+        display: block;
+        height: 25%;
+        left: 0;
+        margin: 1px 0 0 0;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+      }
+      
+      th:first-child {
+        border-left: 1px solid #777;	
+        box-shadow: inset 1px 1px 0 #999;
+      }
+      
+      th:last-child {
+        box-shadow: inset -1px 1px 0 #999;
+      }
+      
+      td {
+      border: 1px solid #000;
+        padding: 10px 15px;
+        position: relative;
+        transition: all 300ms;
+      }
+      
+      td:first-child {
+        box-shadow: inset 1px 0 0 #fff;
+      }	
+      
+      td:last-child {
+        border-right: 1px solid #000;
+        box-shadow: inset -1px 0 0 #fff;
+      }	
+      
+      .table-title{
+        background: #f5f5f5;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-bottom: 1rem;
+      }
+      
+      .sub h1{
+        font-size: 3rem;
+        border-bottom: 2px solid #000;
+        overflow: hidden;
+      }
+      
+      .note-btn{
+        height: 25px;
+        width: 60px;
+        color: #000;
+        font-size: .8rem;
+        cursor: pointer;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        align-items: center;
+        transition: .3s;
+      }
+      
+      .tbl-btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem;
+      }
+      
+      .tbl-btn {
+        height: 50px;
+        width: 200px;
+        color: #000;
+        font-size: 1.2rem;
+        border: .2rem solid #000;
+        border-radius: 1rem;
+        cursor: pointer;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+      }
+      a{
+        text-decoration: none;
+      }
+      
+      .tbl-btn:hover{
+        background-color: #43C6AC;
+      }</style>
+</head>
+<body>
+
+
+    <!-- Breadcrumb section -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Subjects</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Subject Name</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Search bar section -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="form-inline mt-3 mb-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--table section start-->
+    <section class="sub">
+      <center><h1>Question Paper</h1></center>
+      <div class="tbl-container">
+          <div class="table-title">
+              <table>
+                  <thead>
+                    <tr>
+                      <th>SR</th>
+                      <th>Chapter NO</th>
+                      <th>sample 1</th>
+                      <th>sample 2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td><strong>Chapter 1</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-regular fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><strong>Chapter 2</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td><strong>Chapter 3</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td><strong>Chapter 4</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>					
+                    <tr>
+                      <td>5</td>
+                      <td><strong>Chapter 5</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td><strong>Chapter 6</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td><strong>Chapter 7</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td><strong>Chapter 8</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td><strong>Chapter 9</strong></td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn"><i class="fa-solid fa-eye"></i>view</div></a></div>
+                      </td>
+                      <td>          
+                        <div class="n-container">
+                        <a href="class9.html"><div class="note-btn">Download</div></a></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="tbl-btn-container">
+                  <a href="9sem.html"><div class="tbl-btn">Sem I</div></a>
+                  <a href="Xsub.html"><div class="tbl-btn">Sem 2</div></a>
+                  <a href="Xsub.html"><div class="tbl-btn">Board</div></a>
+          </div>
+                </div>
+      </div>
+  </section>
+  <!--table section end-->
+
+    <!-- Bootstrap JavaScript and jQuery scripts (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

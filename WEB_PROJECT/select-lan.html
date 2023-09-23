@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIYA.AI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Global styles */
+        body {
+            background-image: url('D:\DNT\WEB_PROJECT\img\e11.png'); /* Add your background image URL here */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            background-attachment: fixed; /* Fixed background position */
+          
+        }
+        .container {
+            padding-left: 100px; /* Add space from the left side for desktop devices */
+            padding-right: 100px; /* Add space from the right side for desktop devices */
+        }
+        .section-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0; /* Add space between sections */
+            border-radius: 10px; /* Rounded corners */
+            transition: box-shadow 0.3s ease; /* Add transition effect */
+        }
+        .form-group button {
+            margin-right: 10px; /* Add space between buttons */
+            height: 50px; /* Increase the height of the buttons to 50px */
+        }
+        .section-divider {
+            border-top: 2px solid #ccc; /* Horizontal line */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .section-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /* Hover effect for section-box */
+        .section-box:hover {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Media query for desktop devices */
+        @media (min-width: 768px) {
+            .advertisement {
+                float: right; /* Float the advertisement to the right */
+                width: 30%; /* Adjust the width of the advertisement as needed */
+                margin-left: 20px; /* Add space to the left of the advertisement */
+                border: 1px solid #ccc;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+
+        .custom-btn:hover {
+  background-color: #334557; /* Change to your desired hover color */
+  color: #fff; /* Change the text color to ensure readability */
+}
+.parent {
+  width: 400px; /* Adjust the width as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add your desired box shadow properties here */
+  margin: 0 auto; /* Center the parent div horizontally on larger screens */
+  text-align: center; /* Center the content horizontally within the div */
+}
+        /* Media query for smaller screens (mobile) */
+        @media (max-width: 768px) {
+            /* Remove the "Medium of Instruction" section */
+            .form-group.medium-instruction {
+                display: none;
+            }
+
+            /* Center-align two buttons in one row on mobile */
+            .form-group.center-buttons {
+                text-align: center;
+            }
+
+            /* Adjust button width and margin to prevent vertical touch */
+            .custom-btn {
+                width: calc(70% - 20px); /* 50% width with spacing between buttons */
+                height: 50px; /* Increase the height of the buttons to 50px */
+                margin: 10px; /* Add space between buttons to prevent vertical touch */
+                white-space: normal; /* Allow text to wrap */
+                word-wrap: break-word; /* Break long words */
+            }
+
+            /* Center-align text and icon */
+            .custom-btn i {
+                display: block;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .btn-16{
+                line-height: 0px;
+            }
+             .parent{
+                margin-left: -60px;
+                padding: 0;
+             }
+        }
+ .form-group button {
+    margin-right: 10px;
+    height: 60px;
+}
+    </style>
+</head>
+<body>
+
+
+
+
+    <!-- Main Content -->
+    <div class="container" style="margin-top: 3rem;">
+         <div class="parent">
+        <!-- Breadcrumb section -->
+        <div class="container mt-3" style=" display: flex; justify-content: center;">
+            <nav aria-label="breadcrumb" >
+                <ol class="breadcrumb" style="width: 300px;">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Subjects</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Subject Name</li>
+                </ol>
+            </nav>
+        </div>
+    
+        <!-- College Section -->
+        <div class="section-box">
+            <div class="col-md-8">
+                <form class="form-inline mt-3 mb-3" style="width: 400px; display: flex; "">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-left: 0; width: 200px;">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+                    <h3>Select Language</h3>
+            <div class="section-container">
+                <form>
+
+                    
+                    <!-- Center-align two buttons in one row on mobile -->
+                    <div class="form-group center-buttons">
+                        <button class="custom-btn btn-16" style="width: 120px;"><i class="fas fa-graduation-cap"></i>English</button>
+                        <button class="custom-btn btn-16" style="width: 120px;"><i class="fas fa-graduation-cap"></i>Hindi</button>
+                      <button class="custom-btn btn-16" style="width: 120px;"><i class="fas fa-graduation-cap"></i>Marathi</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- Include Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: #f1c40f;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sub-h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 100%; /* Full width for cards on mobile screens */
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px; /* Add margin to separate cards */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar section start -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">M.H.K<span>classes</span></a>
+            <div class="menu-icon" id="menu-icon">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar section ends -->
+
+    <!-- Breadcrumb section -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Subjects</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Subject Name</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Search bar section -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="form-inline mt-3 mb-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Books section start -->
+    <div class="container">
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sub-img/math1-11.jpg" alt="Image 1">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sub-img/math2-11.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sub-img/physics-11.jpg" alt="Image 3">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sub-img/chem-11.jpg" alt="Image 4">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sub-img/bio-11.jpg" alt="Image 5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Books section end -->
+
+    <!-- Bootstrap JavaScript and jQuery scripts (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

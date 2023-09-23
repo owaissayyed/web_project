@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion {
+            width: 100%;
+        }
+
+        .accordion-section {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Hide overflow for expandable div */
+        }
+
+        .accordion-header {
+            background-color: #0a4b76;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header.active {
+            background-color: #1b8664; /* Change background color when expanded */
+        }
+
+        .accordion-header h2 {
+            margin: 0;
+        }
+
+        .accordion-icon {
+            font-size: 24px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #fff;
+            color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for color change */
+        }
+
+        button:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        button:first-child {
+            background-color: #28a745;
+            color: #fff;
+            border: 2px solid #28a745;
+        }
+
+        button:first-child:hover {
+            background-color: #218838;
+        }
+
+        /* Style for the YouTube button */
+        button.youtube-button {
+            color: #ff0000;
+        }
+
+        /* Change the color of the YouTube button icon on hover */
+        button.youtube-button:hover {
+            color: #fff;
+        }
+    </style>
+    <title>Accordion with Buttons</title>
+</head>
+<body>
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-section">
+                <div class="accordion-header">
+                    <h2>Section 1</h2>
+                    <div class="accordion-icon">+</div>
+                </div>
+                <div class="accordion-content">
+                    <button>
+                        <i class="fas fa-sticky-note"></i> Notes
+                    </button>
+                    <button>
+                        <i class="fas fa-file-alt"></i> Question Paper
+                    </button>
+                    <button class="youtube-button">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </button>
+                </div>
+            </div>
+            <div class="accordion-section">
+                <div class="accordion-header">
+                    <h2>Section 2</h2>
+                    <div class="accordion-icon">+</div>
+                </div>
+                <div class="accordion-content">
+                    <button>
+                        <i class="fas fa-sticky-note"></i> Notes
+                    </button>
+                    <button>
+                        <i class="fas fa-file-alt"></i> Question Paper
+                    </button>
+                    <button class="youtube-button">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </button>
+                </div>
+            </div>
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+    <script>
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        const accordionContents = document.querySelectorAll('.accordion-content');
+
+        accordionHeaders.forEach((header, index) => {
+            header.addEventListener('click', () => {
+                if (accordionContents[index].style.display === 'block') {
+                    accordionContents[index].style.display = 'none';
+                    header.querySelector('.accordion-icon').textContent = '+';
+                    header.classList.remove('active');
+                } else {
+                    // Close all other accordion sections and remove active class
+                    accordionContents.forEach((content, i) => {
+                        content.style.display = 'none';
+                        accordionHeaders[i].querySelector('.accordion-icon').textContent = '+';
+                        accordionHeaders[i].classList.remove('active');
+                    });
+
+                    // Open the clicked accordion section and add active class
+                    accordionContents[index].style.display = 'block';
+                    header.querySelector('.accordion-icon').textContent = '-';
+                    header.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

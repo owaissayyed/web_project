@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIYA.AI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Global styles */
+        body {
+            background-image: url('D:\DNT\WEB_PROJECT\img\e11.png'); /* Add your background image URL here */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            background-attachment: fixed; /* Fixed background position */
+          
+        }
+        .container {
+            padding-left: 100px; /* Add space from the left side for desktop devices */
+            padding-right: 100px; /* Add space from the right side for desktop devices */
+        }
+        .section-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0; /* Add space between sections */
+            border-radius: 10px; /* Rounded corners */
+            transition: box-shadow 0.3s ease; /* Add transition effect */
+        }
+        .form-group button {
+            margin-right: 10px; /* Add space between buttons */
+            height: 50px; /* Increase the height of the buttons to 50px */
+        }
+        .section-divider {
+            border-top: 2px solid #ccc; /* Horizontal line */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .section-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /* Hover effect for section-box */
+        .section-box:hover {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Media query for desktop devices */
+        @media (min-width: 768px) {
+            .advertisement {
+                float: right; /* Float the advertisement to the right */
+                width: 30%; /* Adjust the width of the advertisement as needed */
+                margin-left: 20px; /* Add space to the left of the advertisement */
+                border: 1px solid #ccc;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+
+        .custom-btn:hover {
+  background-color: #334557; /* Change to your desired hover color */
+  color: #fff; /* Change the text color to ensure readability */
+}
+.parent {
+  width: 400px; /* Adjust the width as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add your desired box shadow properties here */
+  margin: 0 auto; /* Center the parent div horizontally on larger screens */
+  text-align: center; /* Center the content horizontally within the div */
+}
+        /* Media query for smaller screens (mobile) */
+        @media (max-width: 768px) {
+            /* Remove the "Medium of Instruction" section */
+            .form-group.medium-instruction {
+                display: none;
+            }
+
+            /* Center-align two buttons in one row on mobile */
+            .form-group.center-buttons {
+                text-align: center;
+            }
+
+            /* Adjust button width and margin to prevent vertical touch */
+            .custom-btn {
+                width: calc(70% - 20px); /* 50% width with spacing between buttons */
+                height: 50px; /* Increase the height of the buttons to 50px */
+                margin: 10px; /* Add space between buttons to prevent vertical touch */
+                white-space: normal; /* Allow text to wrap */
+                word-wrap: break-word; /* Break long words */
+            }
+
+            /* Center-align text and icon */
+            .custom-btn i {
+                display: block;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .btn-16{
+                line-height: 0px;
+            }
+             .parent{
+                margin-left: -60px;
+                padding: 0;
+             }
+        }
+ .form-group button {
+    margin-right: 10px;
+    height: 60px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Logo and Title
+    <div class="container text-center">
+        <img src="D:\DNT\WEB_PROJECT\img\logo1.jpg" alt="KIYA.AI Logo" height="30" width="30">
+        <h1>....</h1>
+    </div> -->
+
+<!-- Main Content -->
+<div class="container">
+    <div class="parent">
+        <!-- School Section -->
+        <div class="section-box">
+            <h3>College Section</h3>
+            <div class="section-container">
+                <form>
+                    <!-- Center-align two buttons in one row on mobile -->
+                    <div class="form-group center-buttons">
+                        <button class="custom-btn btn-16 sel-st"><i class="fas fa-graduation-cap"></i>12th(HSC)</button>
+                        <button class="custom-btn btn-16 sel-st"><i class="fas fa-graduation-cap"></i>11th(FYJC)</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Horizontal line after School Section -->
+        <hr class="section-divider">
+
+        <!-- College Section -->
+        <div class="section-box">
+            <h3>School Section</h3>
+            <div class="section-container">
+                <form>
+                    <!-- Center-align two buttons in one row on mobile -->
+                    <div class="form-group center-buttons">
+                        <button class="custom-btn btn-16 sel-lan"><i class="fas fa-graduation-cap"></i>Class 10th</button>
+                        <button class="custom-btn btn-16 sel-lan"><i class="fas fa-graduation-cap"></i>Class 9th</button>
+                        <button class="custom-btn btn-16 sel-lan"><i class="fas fa-graduation-cap"></i>Class 8th</button>
+                        <button class="custom-btn btn-16 sel-lan"><i class="fas fa-graduation-cap"></i>Class 7th</button>
+                        <button class="custom-btn btn-16 sel-lan"><i class="fas fa-graduation-cap"></i>Class 6th</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+     <!-- Include Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Get elements with class names "sel-st" and "sel-lan"
+        const redirectButtons1 = document.querySelectorAll('.sel-st');
+        const redirectButtons2 = document.querySelectorAll('.sel-lan');
+    
+        // Add click event listeners to the elements
+        redirectButtons1.forEach(button => {
+            button.addEventListener('click', function() {
+                // Redirect to a new page (change 'newpage.html' to the URL of your desired page)
+                window.location.href = 'select-strm.html';
+            });
+        });
+    
+        redirectButtons2.forEach(button => {
+            button.addEventListener('click', function() {
+                // Redirect to a new page (change 'newpage.html' to the URL of your desired page)
+                window.location.href = 'select-lan.html';
+            });
+        });
+    </script>
+</body>
+</html>
